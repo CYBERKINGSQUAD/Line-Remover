@@ -29,3 +29,6 @@ Duplicate line Auto Remove ⭐⭐
 Check Output File ⭐⭐
 
 💥 💥 💥
+
+
+python2 Remove.py
