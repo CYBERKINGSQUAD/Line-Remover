@@ -46,5 +46,5 @@ try:
 
 except:
     
-    print("")
+    
     print ("""\033[1;32;91m[ something error!! ] [ Stay_With_CKS ]\n""")
