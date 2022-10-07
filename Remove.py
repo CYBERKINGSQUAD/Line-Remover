@@ -28,19 +28,13 @@ try:
 
     with open(File, 'r') as fr:
         lines = fr.readlines()
-        with open(File, 'w') as fw:
+        with open((outfile) + ".txt", 'w') as fw:
             for line in lines:
 
                 if line.find(word) == -1:
 
                     fw.write(line)
-    lines_seen = set() 
-    outfile = open((outfile) + ".txt", "w")
-    for line in open(File, "r"):
-         if line not in lines_seen: 
-            outfile.write(line)
-            lines_seen.add(line)
-    outfile.close()
+    
 
     print ("""\033[1;32;40mDeleted[ Check Your Output File Dear ] [ Stay_With_CKS ]\n""")
 
