@@ -23,12 +23,11 @@ print ("""\033[1;32;40m
 \n""")
 try:
     File = raw_input("\n\033[91mEnter Text File \033[97m:~# \033[97m")
-    outfile = raw_input("\n\033[91mEnter Output File File Name \033[97m:~# \033[97m")
     word = raw_input("\n\033[91mEnter Remove Text\033[97m:~# \033[97m")
 
     with open(File, 'r') as fr:
         lines = fr.readlines()
-        with open((outfile) + ".txt", 'w') as fw:
+        with open(File , 'w') as fw:
             for line in lines:
 
                 if line.find(word) == -1:
